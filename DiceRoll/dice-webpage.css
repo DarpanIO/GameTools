@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    margin: auto;
+}
+.output-textbox{
+    padding: 10px;
+    background-color: rgb(189, 187, 187);
+    width: 50px;
+    text-align: center;
+}
+.web-background{
+    min-height: 100vw;
+    min-width: 100vh;
+    z-index: -1;
+}
+.back-img{
+    background-color: white;
+    z-index: -2;
+    height: 30vh;
+}
+.plain-back{
+background-color: black;
+height:70vh;
+}
+.main-container{
+    margin: auto;
+    align-content: center;
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1;
+}

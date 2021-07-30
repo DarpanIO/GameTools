@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.dice{
+    height: 200px;
+    width: 200px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 33px;
+    background-color: #8896a1;
+    padding: 20px;
+
+}
+button{
+    border: 2px black solid ;
+    border-radius: 3px;
+}
+.dice-circles{
+    height: auto;
+    width: auto;
+    background-color: black;
+    border-radius: 50%;
+
+}
+.dice-circle1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+}
