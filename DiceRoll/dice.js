@@ -17,7 +17,7 @@ var inter= setInterval(exec,interval);
 }
 function diceOut(){
     var dice_num= Math.floor(Math.random()*6)+1;
-    document.getElementById("output-textbox").innerHTML= dice_num;
+    document.getElementById("output-textbox1").innerHTML= dice_num;
     var x,y, i;
     x = document.querySelectorAll('.dice-circles');
     for (i = 0; i < x.length; i++) {
@@ -30,7 +30,7 @@ function diceOut(){
         y=document.querySelectorAll('.dice-circle4,.dice-circle6');
     }
     else if(dice_num==3){
-        y=document.querySelectorAll('.dice-circle2,.dice-circle5,.dice-circle8');
+        y=document.querySelectorAll('.dice-circle1,.dice-circle5,.dice-circle9');
     }
     else if(dice_num==4){
         y=document.querySelectorAll('.dice-circle1,.dice-circle3,.dice-circle7,.dice-circle9');

@@ -16,7 +16,7 @@ button{
     border: 2px black solid ;
     border-radius: 3px;
 }
-.dice-circles{
+.dice-circles1,.dice-circles2,.dice-circles{
     height: auto;
     width: auto;
     background-color: black;
@@ -24,6 +24,16 @@ button{
 
 }
 .dice-circle1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+}
+.dice-circle11{
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+}
+.dice-circle21{
     grid-column-start: 1;
     grid-column-end: 2;
 

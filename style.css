@@ -1,11 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik&display=swap');
+:root{
+    --theme-primary-color: rgba(0, 0, 0, 0.5);
+    --theme-border-color: rgb(255, 255, 255);
+}
 *{
     margin: 0;
     padding: 0;
 }
+a{
+    color: white;
+    font-style: none;
+}
+a:hover{
+    color: white;
+    font-style: none;
+    text-decoration: none;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+}
 .background{
     background: url(/res/gtbg.png);
-    height: 100vh;
+    min-height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -14,12 +32,13 @@
     flex-direction: column;
 }
 .web-logo{
-    -webkit-text-stroke: 3px rgb(236, 0, 0);
+    /* -webkit-text-stroke: 3px rgb(0, 0, 0); */
     color: white;
     margin: 5px auto;
     font-family: 'Rubik', sans-serif;
     font-size: 3vw;
     text-align: center;
+    font-weight: 100;
     /* width: 80vw; */
     background:rgba(0, 0, 0, 0.459);
     display: flex;
@@ -27,16 +46,77 @@
     padding: 0px 5px;
 
 }
+nav>.web-logo{
+    /* -webkit-text-stroke: 0.5px rgb(0, 0, 0); */
+    color: white;
+    margin: 5px auto;
+    font-family: 'Rubik', sans-serif;
+    font-size: 3.5vh;
+    text-align: center;
+    /* width: 80vw; */
+    background:rgba(0, 0, 0, 0.192);
+    display: flex;
+    border-radius: 5px;;
+    padding: 0px 5px;
+    display:none
+
+}
     nav{
         margin: 5px auto;
         width: 80vw;
         border-radius: 10px;
+        background-color: var(--theme-primary-color);
+        border: var(--theme-border-color) 2px solid;
     }
 .main-container{
-    min-height: 79vh;
+    min-height: 76vh;
+    height: auto;
     background: rgba(0, 0, 0, 0.61);
     width: 80vw;
     margin: 10px auto;
-    border: rgba(216, 0, 0, 0.63) 2px solid;
+    border: var(--theme-border-color) 2px solid;
     border-radius: 20px;
+    display: flex;
+    padding: 20px;
+}
+.card-item{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    border: var(--theme-border-color) 2px solid;
+    border-radius: 20px;
+    height: 170px;
+    width: 110px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 15px;
+    text-align: center;
+}
+.card-item:hover {
+    background: white;
+    color: black;
+}
+.card-item>img{
+    height: 80px;
+    background-color: white;
+    padding: 5px;
+    border: black 2px solid;
+    border-radius: 10px;
+}
+.game-titlebox{
+    font-family: 'Rubik', sans-serif;
+    font-size: 7vh;
+    color: white;
+    margin: 0px auto 30px auto;
+}
+
+@media screen and (max-width:985px) {
+    .web-logo{
+        display: none;
+    }
+    nav>.web-logo{
+        display: flex;
+    }
+    .game-titlebox{
+        font-size: 11vw;
+    }
 }

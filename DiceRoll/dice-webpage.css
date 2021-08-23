@@ -5,31 +5,38 @@
 }
 .output-textbox{
     padding: 10px;
-    background-color: rgb(189, 187, 187);
-    width: 50px;
+    margin: 30px auto;
+    font-size: 30px;
+    background-color: rgb(255, 255, 255);
+    width: 90px;
     text-align: center;
+    color: black;
+    font-weight: bold;
+    border-radius: 20px;
 }
-.web-background{
-    min-height: 100vw;
-    min-width: 100vh;
-    z-index: -1;
-}
-.back-img{
-    background-color: white;
-    z-index: -2;
-    height: 30vh;
-}
+
 .plain-back{
 background-color: black;
 height:70vh;
 }
-.main-container{
-    margin: auto;
-    align-content: center;
+.main-container-dice{
+    margin: 0px auto;
+    /* align-content: center; */
     width: 90vw;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
     z-index: 1;
+}
+.dropdown{
+    align-self: flex-end;
+}
+.dices-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.dice-container{
+    display: flex;
+    flex-direction: column;
+    padding: 38px;
 }
