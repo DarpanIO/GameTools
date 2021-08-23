@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.background{
+    background: url(/res/gtbg.png);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.web-logo{
+    -webkit-text-stroke: 3px rgb(236, 0, 0);
+    color: white;
+    margin: 5px auto;
+    font-family: 'Rubik', sans-serif;
+    font-size: 3vw;
+    text-align: center;
+    /* width: 80vw; */
+    background:rgba(0, 0, 0, 0.459);
+    display: flex;
+    border-radius: 15px;;
+    padding: 0px 5px;
+
+}
+    nav{
+        margin: 5px auto;
+        width: 80vw;
+        border-radius: 10px;
+    }
+.main-container{
+    min-height: 79vh;
+    background: rgba(0, 0, 0, 0.61);
+    width: 80vw;
+    margin: 10px auto;
+    border: rgba(216, 0, 0, 0.63) 2px solid;
+    border-radius: 20px;
+}
