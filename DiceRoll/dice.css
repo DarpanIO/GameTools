@@ -12,6 +12,16 @@
     padding: 20px;
 
 }
+.mult_dice{
+    height: 200px;
+    width: 40%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 33px;
+    background-color: #8896a1;
+    padding: 20px;
+
+}
 button{
     border: 2px black solid ;
     border-radius: 3px;
@@ -37,4 +47,16 @@ button{
     grid-column-start: 1;
     grid-column-end: 2;
 
+}
+@media screen and (max-width:700px) {
+    .dice{
+        height: 30vw;
+        width: 30vw;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px;
+        background-color: #8896a1;
+        padding: 10px;
+    
+    }
 }
