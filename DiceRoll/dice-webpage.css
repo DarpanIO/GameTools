@@ -43,3 +43,8 @@ height:70vh;
     flex-direction: column;
     padding: 38px;
 }
+@media screen and (max-width:700px) {
+    .dice-container{
+        padding: 10px;
+    }
+}
