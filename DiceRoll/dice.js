@@ -2,7 +2,7 @@ function rollDice(){
 var duration= 2600;
 var interval=20;
 var count=0;
-var dice_audio = new Audio("/DiceRoll/resources/diceaudio.wav");
+var dice_audio = new Audio("https://darpan-exe.github.io/GameTools/DiceRoll/resources/diceaudio.wav");
 dice_audio.play();
 var inter= setInterval(exec,interval);
     function exec(){
