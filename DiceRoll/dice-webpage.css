@@ -32,7 +32,7 @@ height:70vh;
     flex-direction: column;
     z-index: 1;
 }
-.dropdown{
+.main-container>.dropdown{
     align-self: flex-end;
 }
 .dices-container{
